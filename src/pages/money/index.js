@@ -32,6 +32,7 @@ function Money() {
           </>
         );
       case "USD":
+      default:
         return (
           <>
             <button onClick={() => setCurrency("BRL")}>usar BRL</button>
@@ -48,8 +49,6 @@ function Money() {
             />
           </>
         );
-      default:
-        return <>Nenhuma Selecionada</>;
     }
   };
 
